@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+/* basic component styles */
+
+html, body {
+  overflow: hidden;
+  background: #070707;
+  width: 100vw;
+  height: 100vw;
+}
+
+.container {
+  height: 800px;
+  width: auto;
+  display: grid;
+  grid-template-columns: 5vw 40vw 5vw 40vw 5vw;
+  grid-template-rows: 20% 5% 10% 5% auto;
+  justify-content: center;
+  background: #070707;
+
+}
+
+/* title styles */
+
+.title-container {
+  grid-column: 2 / span 3;
+  align-self: center;
+}
+
+#title-txt {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  letter-spacing: 0.5em;
+
+  color: #4200FF;
+}
+
+/* gif styles */
+
+.gif-container {
+  grid-column: 4 / span 1;
+  grid-row: 3;
+
+}
+
+img {
+  align-self: center;
+}
+
+/* form styles */
+
+.form-container {
+  grid-column: 2 / span 1;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 100%;
+}
+
+input {
+  padding: 0.5em 2em;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+
+  outline: none;
+  border: none;
+
+  color: #9483FF;
+  background: rgba(66, 0, 255, 0.35);
+}
+
+::placeholder {
+  font-family: "Roboto";
+  font-style: oblique;
+  font-weight: 300;
+  font-size: 16px;
+
+  color: #9483FF;
+}
+
+#search-btn {
+  padding: 0.5em 2em;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  color: #9483FF;
+
+  background: rgba(66, 0, 255, 0.4);
+  outline: none;
+  border: none;
+}
+
+/* weather styles */
+
+.weather-container {
+  grid-column: 2 / span 1;
+  grid-row: 5;
+
+}
+
+.weather__key {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0.5em 0em;
+  color: #9483FF;
+  font-weight: 400;
+}
+
+.weather__key:last-child {
+  border: 0;
+}
+
+.weather__value {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+
+.weather__error {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
